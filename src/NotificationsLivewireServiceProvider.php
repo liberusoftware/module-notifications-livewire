@@ -12,7 +12,6 @@ final class NotificationsLivewireServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'notifications-livewire');
-        Livewire\Livewire::component('notifications-livewire-overview', Liberu\Foundation\NotificationsLivewire\Livewire\Overview::class);
+        Livewire::component('notifications-livewire-overview', Liberu\Foundation\NotificationsLivewire\Livewire\Overview::class);
     }
 }
-
